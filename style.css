@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 { font-size: 32px; }
+
+nav a {
+    color: #bbb;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover { color: white; }
+
+/* TÍTULOS */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.card {
+    background: #1a1a1a;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: .3s;
+    box-shadow: 0 0 10px #000;
+    animation: fadeUp 0.8s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #222;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card button {
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px;
+    background: #0066ff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.card button:hover { background: #004bcc; }
+
+.size {
+    margin-top: 10px;
+    padding: 7px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+/* CARRINHO */
+#carrinho {
+    background: #111;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.finalizar {
+    background: green;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.finalizar:hover { background: #006600; }
+
+/* CONTATO */
+.contato {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.contato a {
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+    color: white;
+    background: #222;
+    padding: 12px;
+    width: 200px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.contato a:hover { background: #444; }
+
+/* ANIMAÇÕES */
+.fade-up { animation: fadeUp 1s ease; }
+.fade-down { animation: fadeDown 1s ease; }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
